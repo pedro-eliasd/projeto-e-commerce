@@ -1,5 +1,6 @@
 import leia = require ('readline-sync');
 import { Produto } from './src/model/Produto';
+import { Tenis } from './src/model/Tenis';
 
 export function main(){
 
@@ -14,7 +15,7 @@ export function main(){
         console.log("                                                     ");
         console.log("            1 - Adicionar produto                    ");
         console.log("            2 - Listar todas os produtos             ");
-        console.log("            3 - Buscar produto por Numero            ");
+        console.log("            3 - Buscar produto por código            ");
         console.log("            4 - Atualizar Dados do produto           ");
         console.log("            5 - Apagar produto                       ");
         console.log("            6 - Sair                                 ");

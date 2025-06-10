@@ -3,12 +3,14 @@ export abstract class Produto{
     private _emEstoque: boolean;
     private _tipo: number;
     private _nome: string;
+    private _codigo: number
 
-    constructor(preco: number, emEstoque: boolean, tipo: number, nome: string){
+    constructor(preco: number, emEstoque: boolean, tipo: number, nome: string, codigo: number){
         this._preco = preco;
         this._emEstoque = emEstoque;
         this._tipo = tipo;
         this._nome = nome;
+        this._codigo = codigo;
     }
 
     public get preco(){
@@ -41,6 +43,14 @@ export abstract class Produto{
 
     public set nome(nome: string){
         this._nome = nome;
+    }
+
+    public get codigo(){
+        return this._codigo;
+    }
+
+    public set codigo(codigo: number){
+        this._codigo = codigo;
     }
 
     public visualizar(){
