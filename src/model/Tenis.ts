@@ -5,8 +5,8 @@ export class Tenis extends Produto{
     private _marca: string;
     private _colorWay: string;
 
-    constructor(preco: number, emEstoque: boolean, tipo: number, nome: string, codigo: number, modelo: string, marca: string, colorWay: string){
-        super(preco, emEstoque, tipo, nome, codigo);
+    constructor( codigo: number,  nome: string, preco: number, emEstoque: boolean, tipo: number, modelo: string, marca: string, colorWay: string){
+        super(codigo, nome, preco, emEstoque, tipo);
         this._modelo = modelo;
         this._marca = marca;
         this._colorWay = colorWay;
@@ -43,8 +43,8 @@ public get colorWay(){
         console.log("Código: " + this.codigo)
         console.log("Nome: " + this.nome);
         console.log("Modelo: " + this._modelo);
-        console.log("Nome: " + this._marca);
-        console.log("Nome: " + this._colorWay);
+        console.log("Marca: " + this._marca);
+        console.log("Color Way: " + this._colorWay);
         console.log("Preço: " + this.preco);
         console.log("Em estoque: " + this.emEstoque);
         console.log("*****************************************************");
